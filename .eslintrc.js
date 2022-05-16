@@ -1,0 +1,46 @@
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'prettier',
+    'airbnb',
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  rules: {
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
+    'react/jsx-filename-extension': [
+      2,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+    ],
+    'no-console': 0,
+    'react/prop-types': 0,
+    'react/require-default-props': 0,
+    'no-nested-ternary': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/forbid-prop-types': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'no-unused-vars': 0,
+    'import/no-unresolved': 0,
+    'import/extensions': 0,
+    'no-use-before-define': 0,
+    'jsx-a11y/label-has-associated-control': 0,
+    'import/order': 0,
+    'no-shadow': 0,
+    'no-unused-expressions': 0,
+    'no-param-reassign': 0,
+    'prefer-promise-reject-errors': 0,
+  },
+};
