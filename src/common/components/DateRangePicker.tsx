@@ -13,7 +13,7 @@ import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { makeStyles } from '@mui/styles';
-import { COLOR_DARK_GREY, COLOR_GREY_50 } from '../styles/Color';
+import { COLOR_DARK_GREY } from '../styles/Color';
 
 interface DateRangePickerProps {
   startDate: string;
